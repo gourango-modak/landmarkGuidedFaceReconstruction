@@ -12,7 +12,7 @@ TEST_INPAINT_IMAGE_FLIST: ./datasets/example_images.flist
 
 TRAIN_INPAINT_LANDMARK_FLIST: 
 VAL_INPAINT_LANDMARK_FLIST: 
-TEST_INPAINT_LANDMARK_FLIST: #./datasets/example_landmarks.flist
+TEST_INPAINT_LANDMARK_FLIST: ./datasets/example_landmarks.flist
 
 TRAIN_MASK_FLIST: 
 VAL_MASK_FLIST: 

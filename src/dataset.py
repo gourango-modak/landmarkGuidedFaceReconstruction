@@ -160,7 +160,7 @@ class Dataset(torch.utils.data.Dataset):
             mask = imread(self.mask_data[index])
             mask = self.resize(mask, imgh, imgw, centerCrop=False)
             mask = rgb2gray(mask)
-            mask = mask.astype(np.uint8)
+            mask = (mask > 0).astype(np.uint8) * 255
             
             # cv2.imwrite("/content/1/"+str(index)+".png", mask)
             

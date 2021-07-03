@@ -78,7 +78,7 @@ class Lafin():
         if self.config.MODEL == 1:
             if self.config.AUGMENTATION_TRAIN == 1:
                 self.inpaint_model.load()
-            self.landmark_model.load()
+            # self.landmark_model.load()
 
         elif self.config.MODEL == 2:
             self.inpaint_model.load()

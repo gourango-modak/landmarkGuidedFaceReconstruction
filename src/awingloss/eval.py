@@ -23,6 +23,7 @@ def test_model(image_path, pretrained_weights, gray_scale, hg_blocks, end_relu, 
     model_ft = models.FAN(HG_BLOCKS, END_RELU, GRAY_SCALE, NUM_LANDMARKS)
 
     if PRETRAINED_WEIGHTS != "None":
+        
         checkpoint = torch.load(PRETRAINED_WEIGHTS)
         if 'state_dict' not in checkpoint:
             model_ft.load_state_dict(checkpoint)
